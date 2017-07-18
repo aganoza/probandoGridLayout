@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: minmax(1em, 1fr) minmax(0, 40em) minmax(1em, 1fr);
+}
+
+.grid > * {
+  grid-column: 2;
+}
+
+.grid > .full {
+  grid-column: 1 / 4;
+}
